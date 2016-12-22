@@ -2,7 +2,7 @@ auroboros is an organization founded by [John McGill](https://github.com/fat0wl)
 
 auroboros' libraries are:
 
-### [signal-z](/signalz)
+### [signal-z](/signal-z)
 
 A generic signal-processing "core", this library aims to abstract the fundamental algebra of DSP into an implementation-agnostic framework. Implementors may then extend its types for use with any signal medium (audio, video, pure data, anything else?). Having an abstracted core also allows implementing libraries to be decorated with a number of different processing models (purely functional, streams, perhaps reactive streams) which can be updated and enhanced without necessarily even requiring any refactoring to the implementing libraries. One of the upcoming goals of this library will also be to normalize the time-domain for simultaneously using multiple mediums that operate at independent rates.
 
