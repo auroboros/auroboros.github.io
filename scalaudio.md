@@ -6,7 +6,7 @@ If you're using SBT, add the following line to your build file:
 libraryDependencies += "org.auroboros" %% "scalaudio-amp" % "0.0.1"
 ```
 
-### Quickstart
+## Quickstart
 Add the line above to build.sbt and begin composing/synthesizing. The following examples use function composition via [scalaz](https://github.com/scalaz/scalaz) but if you are fluent in Scala you may know many more ways to achieve this (.andThen, for one), so scalaz is not a transitive dependency of scalaudio. Therefore, your build.sbt should look like this if you'd like to follow along.
 
 ```scala
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
 )
 ```
 
-##### Simple sine oscillator
+#### Simple sine oscillator
 
 ```scala
 import scalaz._
@@ -38,5 +38,5 @@ object MyFirstSynthComposition extends App with AmpSyntax {
 }
 ```
 
-### modules
+## modules
 scalaudio contains several modules but currently the only published modules are _scalaudio-amp_ and _scalaudio-core_. In a future release, these may be merged as the code is more and more simplified due to the framework provided by signal-z but for now the core contains most of the static utility code + context whereas _amp_ provides all of the audio signal processing units (unitgens, filters, etc.). At the time of writing, I don't see much chance of someone using _core_ without _amp_ and since _amp_ depends on _core_, I simply showed how to include _amp_ above. If someone is interested in making another audio processing library for the JVM, I would love to collaborate to make _core_ into a true set of utilities (or extract a utility module) for JVM audio access / byte-conversion / Midi parsing / etc. This could even be done in Java if it being in Scala is a hindrance to interoperability.
