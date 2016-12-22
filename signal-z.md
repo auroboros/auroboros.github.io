@@ -15,13 +15,13 @@ Many users will not directly depend on signal-z, as it is a a transitived depend
 ### what exactly are these signal processing paradigms?
 Currently there are 2 models: functional and streaming. 
 
-##### Functional
+#### Functional
 The functional model involves composing signal processing units using pretty vanilla Scala function composition (this can be achieved using .andThen, but typically I prefer to add [scalaz](https://github.com/scalaz/scalaz) as an additional dependency to do functor-based composition. This model is really simplistic and neat because basically the whole "state" of the processing chain is baked into the function via closures and then we can produce a sequence of frames just by calling the function over & over.
 
-##### Streaming
+#### Streaming
 "Streaming" in this context refers to Scala streams from the standard Scala collections API. Streaming units in signal-z are also based off of processing functions, but use them as stream producers/consumers (transforming via "map" and other memory-leak "safe" functions). Streams can be difficult to manage in that standard Scala streams can cause memory leaks if a reference to the head is held, and typically there is only 1 point at which stream consumption can take place. To alleviate this, signal-z always defines streams as methods and passes them by-name rather than by value. Nevertheless, they are pretty neat (a signal processing unit produces a stream, which is given as an input stream to the next unit, etc.) and a very linear sort of analogy for signal processing especially when it comes to normalizing the time domain. Imagine it, if a stream is pattern-matched correctly within a unit that processes on signal history, it could even alleviate the need for having an internal buffer in that unit at all.
 
-##### Possible future models...
+#### Possible future models...
 Due to the issues mentioned above in streaming (maybe I will post some links but there are many articles that go in depth into them but they are pretty easy to find) I am considering exploring other streaming models.
 
 1. EphemeralStream
