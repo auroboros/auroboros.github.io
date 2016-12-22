@@ -3,5 +3,3 @@ title: auroboros
 description: signal processing libs for the jvm
 url: auroboros.org
 author: John McGill
-gems:
-  - jekyll-sitemap
