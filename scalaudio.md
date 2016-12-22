@@ -8,6 +8,7 @@ libraryDependencies += "org.auroboros" %% "scalaudio-amp" % "0.0.1"
 
 ### Quickstart
 Add the line above to build.sbt and begin composing/synthesizing. The following examples use function composition via [scalaz](https://github.com/scalaz/scalaz) but if you are fluent in Scala you may know many more ways to achieve this (.andThen, for one), so scalaz is not a transitive dependency of scalaudio. Therefore, your build.sbt should look like this if you'd like to follow along.
+
 ```scala
 libraryDependencies ++= Seq(
   "org.auroboros" %% "scalaudio-amp" % "0.0.1",
