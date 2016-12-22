@@ -1,2 +1,4 @@
 theme: jekyll-theme-minimal
 title: auroboros
+gems:
+  - jekyll-sitemap
