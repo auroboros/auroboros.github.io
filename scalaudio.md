@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
 )
 ```
 
-###### Simple sine oscillator
+##### Simple sine oscillator
 
 ```scala
 import scalaz._
