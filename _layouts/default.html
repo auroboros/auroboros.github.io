@@ -10,6 +10,12 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style>
+      .project-nav {
+        background-color: #cffdc6;
+        padding: 2px;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -18,9 +24,9 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         
         <p><a href="/">home</a></p>
-        <p><a href="/signal-z">signal-z</a></p>
-        <p><a href="/scalaudio">scalaudio</a></p>
-        <p><a href="/scalim">scalim</a></p>
+        <p class="project-nav"><a href="/signal-z">signal-z</a></p>
+        <p class="project-nav"><a href="/scalaudio">scalaudio</a></p>
+        <p class="project-nav"><a href="/scalim">scalim</a></p>
 
         {% if site.github.is_project_page %}
           <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
