@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+auroboros is an organization founded by [John McGill](https://github.com/fat0wl) to provide a coherent set of libraries dedicated to signal processing. Currently these libraries are written in Scala, but an auxiliary goal of the project is to provide a set of very basic components to make it fundamentally easier to work with audio on the JVM (allowing library developers to provide higher-level syntax in the language of their choice built on top of these core utilities).
 
-You can use the [editor on GitHub](https://github.com/auroboros/auroboros.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+auroboros' libraries are:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### [signal-z](/signalz)
 
-### Markdown
+A generic signal-processing "core", this library aims to abstract the fundamental algebra of DSP into an implementation-agnostic framework. Implementors may then extend its types for use with any signal medium (audio, video, pure data, anything else?). Having an abstracted core also allows implementing libraries to be decorated with a number of different processing models (purely functional, streams, perhaps reactive streams) which can be updated and enhanced without necessarily even requiring any refactoring to the implementing libraries. One of the upcoming goals of this library will also be to normalize the time-domain for simultaneously using multiple mediums that operate at independent rates.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### [scalaudio](/scalaudio)
 
-```markdown
-Syntax highlighted code block
+An audio-processing library based on signal-z designed to wrap the Java Sound API in more productive syntax, resulting in an elegant DSL for audio synthesis & music composition in general.
 
-# Header 1
-## Header 2
-### Header 3
+### [scalim](/scalim)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/auroboros/auroboros.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+A very experimental library for image/video processing.
