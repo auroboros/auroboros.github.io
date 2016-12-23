@@ -4,7 +4,7 @@ auroboros' libraries are:
 
 ### [signal-z](/signal-z)
 
-A generic signal-processing core providing fundamental type algebra related to signal processors. signal-z defines traits that can be extended to decorate very minimal classes (closures for state transformation functions, essentially) with various signal flow paradigms.
+A generic core encapsulating the fundamental type algebra of signal processing. signal-z defines traits that can be extended to decorate very minimal classes (closures for state transformation functions, essentially) with various signal flow paradigms.
 
 ### [scalaudio](/scalaudio)
 
