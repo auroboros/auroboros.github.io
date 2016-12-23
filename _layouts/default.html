@@ -34,6 +34,9 @@
         <p><a href="/releases">releases</a></p>
         <p class="project-nav"><a href="/signal-z">signal-z</a></p>
         <p class="project-nav"><a href="/scalaudio">scalaudio</a></p>
+        {% if page.category == "scalaudio" %}
+          <p class="project-subnav"><a href="/scalaudio">scalaudio subnav</a></p>
+        {% endif %}
         <p class="project-nav"><a href="/scalim">scalim</a></p>
 
         {% if site.github.is_project_page %}
