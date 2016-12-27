@@ -6,7 +6,7 @@ categories: scalaudio
 If you're using SBT, add the following line to your build file:
 
 ```scala
-libraryDependencies += "org.auroboros" %% "scalaudio-amp" % "0.0.1"
+libraryDependencies += "org.auroboros" %% "scalaudio-amp" % "{{ site.scalaudio-current-version }}"
 ```
 
 ## Quickstart
