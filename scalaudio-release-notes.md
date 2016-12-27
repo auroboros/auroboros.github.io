@@ -1,5 +1,5 @@
 ---
-category: scalaudio
+categories: scalaudio
 permalink: /scalaudio/release-notes
 ---
 
