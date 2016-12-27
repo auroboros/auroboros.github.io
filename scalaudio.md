@@ -14,8 +14,8 @@ Add the line above to build.sbt and begin composing/synthesizing. The following 
 
 ```scala
 libraryDependencies ++= Seq(
-  "org.auroboros" %% "scalaudio-amp" % "0.0.1",
-  "org.scalaz" %% "scalaz-core" % "7.2.8"
+  "org.auroboros" %% "scalaudio-amp" % "{{ site.scalaudio-current-version }}",
+  "org.scalaz" %% "scalaz-core" % "{{ site.scalaz-current-version }}"
 )
 ```
 
