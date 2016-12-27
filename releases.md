@@ -1,6 +1,8 @@
 ### status
 signal-z & scalaudio are currently available as 0.1.0 releases.
-This is considered the first semi-stable release, with a fairly complete feature set (basic unit gens, filters, IO, etc.) but there are holes. For example, analysis units are incomplete and many of the "mutable" (which will be the default) versions of the ugens are unimplemented. The syntax is also perhaps a bit verbose because several design choices are being actively compared (and usually proxied as factory methods) whereas in the future the library may become more opinionated, which will probably allow more terseness.
+
+These are considered the first semi-stable releases, with a fairly complete feature set (basic unit gens, filters, IO, etc.) but many holes. For example, analysis units are incomplete and many of the "mutable" (which will be the default) versions of the ugens are unimplemented. The syntax is also perhaps a bit verbose because several design choices are being actively compared (and usually proxied as factory methods) whereas in the future the library may become more opinionated, which will probably allow more terseness.
+
 More details (release notes, discussion of pending design decisions) can be found with the docs for each respective library.
 
 ### where can I find auroboros' artifacts/code?
