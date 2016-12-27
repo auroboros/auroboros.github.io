@@ -5,3 +5,4 @@ url: auroboros.org
 author: John McGill
 signal-z-current-version: 0.1.0
 scalaudio-current-version: 0.1.0
+scalaz-current-version: 7.2.8
