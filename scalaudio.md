@@ -1,5 +1,5 @@
 ---
-category: scalaudio
+categories: scalaudio
 ---
 [github](https://github.com/auroboros/scalaudio) :: [mvn central](https://mvnrepository.com/artifact/org.auroboros/scalaudio-amp_2.11)
 
