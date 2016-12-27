@@ -3,3 +3,5 @@ title: auroboros
 description: signal processing libs for the jvm
 url: auroboros.org
 author: John McGill
+signal-z-current-version: 0.1.0
+scalaudio-current-version: 0.1.0
