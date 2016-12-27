@@ -1,6 +1,6 @@
 ---
 category: scalaudio
-permalink: /:categories/release-notes
+permalink: /scalaudio/release-notes
 ---
 
 ### 0.1.0 (2016-12-23)
