@@ -3,7 +3,7 @@
 If you're using SBT, add the following line to your build file:
 
 ```scala
-libraryDependencies += "org.auroboros" %% "signalz" % "0.0.1"
+libraryDependencies += "org.auroboros" %% "signal-z" % "0.1.0"
 ```
 
 ## so what is signal-z?
